@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url(/images/pattern-background-desktop.svg) no-repeat center;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: top;
+}
+
+main {
+  height: 100%;
+  width: 400px;
+  background: white;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero {
+  width: 400px;
+  border-radius: 15px 15px 0 0;
+}
+
+h1 {
+  padding: 30px 0 15px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--Dark-blue);
+}
+.title p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 10px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  color: var(--Desaturated-blue);
+}
+.plan-section {
+  background: var(--Very-pale-blue);
+  border-radius: 20px;
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+}
+.plan-section p small {
+  color: var(--Desaturated-blue);
+}
+.plan-section a {
+  float: right;
+  margin-left: 40px;
+  display: block;
+}
+.plan-section a:hover {
+  list-style: none;
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.plan-btn {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.plan-btn .btn-first:hover {
+  background: #8e84fa;
+}
+
+.plan-btn .btn-first {
+  background: var(--Bright-blue);
+  width: 80%;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 18px;
+  border: none;
+  box-shadow: 5px 5px 20px rgb(185, 151, 247);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.7s;
+}
+
+.plan-btn .btn-second {
+  width: 80%;
+  padding: 0 10px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plan-btn .btn-second:hover {
+  color: black;
+  transition: 0.7s;
+}
+
+.plan-section img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 25px;
+}
+
+.attribution {
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--Dark-blue);
+  text-decoration: none;
+}
+
+.attribution .mentor {
+  text-decoration: none;
+}
+
+.attribution .mentor:hover {
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  border-radius: 5px;
+  transition: 0.7s;
+}
